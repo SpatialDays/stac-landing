@@ -17,13 +17,17 @@ const Footer = () => {
             <p>Unit 1 Hercules House</p>
             <p>Calleva Park</p>
             <p>RG7 8DN</p>
-            <p>Email: info@spatialdays.com</p>
-            <p>Phone: +1 (123) 456-7890</p>
+            <p>Email: enquiries@spatialdays.com</p>
+            <p>Phone: +44 (0) 118 971 0035</p>
           </address>
         </div>
       </div>
       <div className="footer__copyright">
-        &copy; {new Date().getFullYear()} Spatial Days Ltd. All rights reserved.
+        &copy; {new Date().getFullYear()}{" "}
+        <a href="https://spatialdays.com" target="_blank">
+          Spatial Days Ltd.
+        </a>{" "}
+        All rights reserved.
       </div>
     </footer>
   );
