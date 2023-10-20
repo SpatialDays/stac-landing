@@ -2,6 +2,9 @@
 
 This repository contains the landing page for Spatial Days Ltd's STAC Portal.
 
+## Demo
+https://stac-landing.vercel.app/
+
 ## Local Development
 
 To run the STAC Portal landing page on your local machine:
