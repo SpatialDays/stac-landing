@@ -14,7 +14,7 @@ const MediaTextBlock = () => {
             in providing comprehensive STAC solutions that empower businesses and researchers. 
             Our cutting-edge technology and data-driven insights have continually set industry standards.
           </p>
-          <button className="media-text-block__button">Find out more</button>
+          <button className="media-text-block__button">Request Access</button>
         </div>
       </div>
     </div>
