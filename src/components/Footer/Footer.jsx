@@ -12,8 +12,8 @@ const Footer = () => {
         </div>
 
         <div className="footer__section">
-          <h4>Contact </h4>
-          <address>
+          <h4 dir="rtl">Contact </h4>
+          <address dir="rtl">
             <p>Unit 1 Hercules House</p>
             <p>Calleva Park</p>
             <p>RG7 8DN</p>
