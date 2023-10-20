@@ -1,8 +1,26 @@
-# React + Vite
+# STAC Portal Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the landing page for Spatial Days Ltd's STAC Portal.
 
-Currently, two official plugins are available:
+## Local Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run the STAC Portal landing page on your local machine:
+
+1. **Clone the Repository**
+    ```bash
+    git clone https://github.com/SpatialDays/stac-landing.git
+    cd stac-landing
+    ```
+
+2. **Install Dependencies**
+    Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed. Then run:
+    ```bash
+    npm install
+    ```
+
+3. **Start the Development Server**
+    ```bash
+    npm run dev
+    ```
+
+The landing page should now be accessible at `http://localhost:5173` or the respective port mentioned in your terminal.
