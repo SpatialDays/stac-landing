@@ -20,9 +20,9 @@ const Hero = () => {
   useEffect(() => {
     const options = {
       strings: [
-        "Unlock Earth&apos;s Stories with STAC",
-        "Discover the World with Us",
-        "Harness the Power of Satellite Data",
+        "Create your imagery catalogue",
+        "Find the imagery you need",
+        "Download the imagery you want",
       ],
       typeSpeed: 50,
       backSpeed: 30,
@@ -70,7 +70,7 @@ const Hero = () => {
             Your portal to easily index, discover, and harness satellite data
             for meaningful insights.
           </p>
-          <button className="hero__button">Request Access</button>
+          <button className="hero__button">Try it out</button>
         </div>
       </div>
 
