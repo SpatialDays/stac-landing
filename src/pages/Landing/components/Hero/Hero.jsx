@@ -18,11 +18,6 @@ const Hero = () => {
   const typedRef = useRef(null);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setPreviousImageIndex(currentImageIndex);
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 9000);
-
     const options = {
       strings: [
         "Unlock Earth&apos;s Stories with STAC",
@@ -33,13 +28,24 @@ const Hero = () => {
       backSpeed: 30,
       backDelay: 2500,
       loop: true,
+      loopCount: Infinity,
     };
 
     const typed = new Typed(typedRef.current, options);
 
     return () => {
-      clearInterval(interval);
       typed.destroy(); // Destroy Typed instance to prevent memory leaks
+    };
+  }, []);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setPreviousImageIndex(currentImageIndex);
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 9000);
+
+    return () => {
+      clearInterval(interval);
     };
   }, [currentImageIndex, images]);
 
