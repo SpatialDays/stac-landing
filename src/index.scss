@@ -1,0 +1,44 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  // Shared styles
+  --font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  // Light mode colors
+  --color-text-light: #213547;
+  --color-bg-light: #ffffff;
+  --color-link-light: #646cff;
+  --color-link-hover-light: #747bff;
+
+
+  --color-button-bg-light: #dddada;
+  --color-button-bg-hover-light: #747bff;
+  --color-button-text-light: #ffffff;
+
+  // Default to light mode
+  color: var(--color-text-light);
+  background-color: var(--color-bg-light);
+}
+
+// Global styles
+body {
+  margin: 0;
+  font-family: inherit;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-link-light);
+  text-decoration: none;
+  &:hover {
+    color: var(--color-link-hover-light);
+  }
+}

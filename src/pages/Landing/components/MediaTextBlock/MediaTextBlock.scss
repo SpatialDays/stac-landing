@@ -1,0 +1,87 @@
+.media-text-block__outer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+
+  .media-text-block {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-left: 2.5rem;
+
+    @media (max-width: 768px) {
+      padding-left: 0;
+      
+    }
+
+    &__image-container,
+    &__text-container {
+      flex: 1;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    &__image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    &__title {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2.5rem;
+
+      @media (max-width: 768px) {
+        margin-bottom: 1rem;
+        margin-top: 0;
+      }
+    }
+
+    &__description {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+
+    &__button {
+      background-color: var(--color-button-bg-light);
+      color: var(--color-text-light);
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+
+      &:hover {
+        background-color: var(--color-button-bg-hover-light);
+      }
+    }
+
+    &.image-right {
+      flex-direction: row-reverse;
+    }
+
+    // Responsive adjustments for smaller screens
+    @media (max-width: 768px) {
+      &__image-container {
+        width: 100%;
+        text-align: center;
+      }
+
+      &__text-container {
+        width: 100%;
+        text-align: center;
+      }
+
+      // make it stack on top of each other
+      &.image-right {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
