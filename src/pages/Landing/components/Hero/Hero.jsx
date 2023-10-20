@@ -67,8 +67,8 @@ const Hero = () => {
             <span ref={typedRef}></span>
           </h1>
           <p className="hero__description">
-            Your portal to easily index, discover, and harness satellite data
-            for meaningful insights.
+            A STAC-based Portal to easily search, view and download imagery data
+            for further analysis or processing
           </p>
           <button className="hero__button">Try it out</button>
         </div>

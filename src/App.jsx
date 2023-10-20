@@ -1,11 +1,15 @@
-import Landing from "./pages/Landing/Landing"
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+import Landing from "./pages/Landing/Landing";
+import About from "./pages/About/About";
+
+const App = () => {
   return (
-    <>
-      <Landing />
-    </>
-  )
-}
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
+  );
+};
 
-export default App
+export default App;

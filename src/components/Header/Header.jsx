@@ -6,7 +6,7 @@ const Header = () => {
     <div className="header-container">
       <div className="header">
         {/* Logo */}
-        <a href="https://spatialdays.com" target="_blank">
+        <a href="/">
           <img src="/sd_logo.png" alt="logo" className="header__logo" />
         </a>
         {/* Links */}
@@ -17,7 +17,7 @@ const Header = () => {
           <a href="/about" className="header__link">
             About
           </a>
-          <a href="https://spatialdays.com/contact/" target="_blank" className="header__link">
+          <a href="/"  className="header__link">
             Contact
           </a>
         </div>
