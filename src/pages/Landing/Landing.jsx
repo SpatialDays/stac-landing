@@ -6,6 +6,7 @@ import Hero from "./components/Hero/Hero";
 import FeatureIcons from "./components/FeatureIcons/FeatureIcons";
 import ImageBackgroundBlock from "./components/ImageBackgroundBlock/ImageBackgroundBlock";
 import UseCases from "./components/UseCases/UseCases";
+import Features from "./components/Features/Features";
 
 const Landing = ({ openModal }) => {
   return (
@@ -16,6 +17,7 @@ const Landing = ({ openModal }) => {
       <FeatureIcons />
       <ImageBackgroundBlock />
       <UseCases />
+      <Features />
       <Footer />
     </>
   );
