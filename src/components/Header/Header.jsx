@@ -15,10 +15,10 @@ const Header = () => {
             Home
           </a>
           <a href="/about" className="header__link">
-            About
+            Details
           </a>
-          <a href="/"  className="header__link">
-            Contact
+          <a href="https://spatialdays.com/" target="_blank" className="header__link">
+            Who We Are
           </a>
         </div>
       </div>

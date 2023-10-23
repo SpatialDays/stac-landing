@@ -1,8 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./FormModal.scss";
 
 const FormModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
+
+  // Listen for esc
+  useEffect(
+    () => {
+      const handleEsc = (event) => {
+        if (event.keyCode === 27) {
+          onClose();
+        }
+      };
+      window.addEventListener("keydown", handleEsc);
+      return () => {
+        window.removeEventListener("keydown", handleEsc);
+      };
+    },
+    []
+  );
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -69,7 +85,7 @@ const FormModal = ({ isOpen, onClose }) => {
             ></textarea>
           </div>
           <button type="submit" className="submit-btn">
-            Submit Inquiry
+            Submit
           </button>
         </form>
       </div>

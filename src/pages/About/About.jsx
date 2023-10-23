@@ -1,6 +1,7 @@
 import "./About.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+import { Tooltip } from "react-tooltip";
 
 const About = ({ openModal }) => {
   return (
@@ -11,12 +12,18 @@ const About = ({ openModal }) => {
       </div>
 
       <main className="about-container">
-        <h1>About Us</h1>
+        <h1>Details</h1>
         <p>
-          Raster data management has always been tricky in the Earth Observation
-          (EO) domain, with the maintenance, storage, access and searching of a
+          Raster data management has always been tricky in the{" "}
+          <a
+            target="_blank"
+            href="https://en.wikipedia.org/wiki/Earth_observation"
+          >
+            Earth Observation (EO)
+          </a>{" "}
+          domain, with the maintenance, storage, access, and searching of a
           dynamic archive of multiple terabytes (or even petabytes) of satellite
-          imagery often being incredibly expensive and time consuming.
+          imagery often being incredibly expensive and time-consuming.
           Organisations often need a better approach to manage and access their
           raster satellite data resources within their organisation.
         </p>
@@ -24,10 +31,14 @@ const About = ({ openModal }) => {
         <section>
           <h2>The Advent of STAC</h2>
           <p>
-            The STAC (SpatioTemporal Asset Catalog) specification is one of the
-            most important and exciting recent developments in the EO industry
-            and it really does have the potential to make many aspects of
-            working with EO data simpler, easier and more cost effective.
+            The{" "}
+            <a target="_blank" href="https://stacspec.org/">
+              STAC (SpatioTemporal Asset Catalog)
+            </a>{" "}
+            specification is one of the most important and exciting recent
+            developments in the EO industry and it really does have the
+            potential to make many aspects of working with EO data simpler,
+            easier, and more cost-effective.
           </p>
           <p>
             STAC is an enabling standard that helps organisations streamline and
@@ -47,17 +58,37 @@ const About = ({ openModal }) => {
           <h2>What We Created</h2>
           <p>
             We took advantage of the recently published STAC standard and its
-            associated ecosystem of STAC tools to develop an intuitive and
-            user-friendly STAC Portal with associated STAC API, hosted in the
-            public cloud (Microsoft Azure).
+            associated ecosystem of{" "}
+            <a
+              target="_blank"
+              href="https://stacspec.org/en/about/tools-resources/"
+            >
+              STAC tools
+            </a>{" "}
+            to develop an intuitive and user-friendly STAC Portal with
+            associated STAC API, hosted in the public cloud (
+            <a target="_blank" href="https://azure.microsoft.com/">
+              Microsoft Azure
+            </a>
+            ).
           </p>{" "}
           <p>
             This STAC-based SaaS service is designed to help users manage their
             imagery data archive but is fully extensible, enabling other add-on
             services to be seamlessly added over time e.g. derived data products
             (High quality Water Masks, Annual Geomedian, NDVI, Fractional Cover
-            etc), catalogue services (OGC CSW), W*S services (OGC WMS, WMTS,
-            WFS, WCS, WPS), bulk data upload functionality, Jupyter Hub
+            etc), catalogue services (
+            <a target="_blank" href="https://www.ogc.org/standard/cat/">
+              OGC CSW
+            </a>
+            ), W*S services (
+            <a href="https://www.ogc.org/standard/wms/">OGC WMS</a>,{" "}
+            <a href="https://www.ogc.org/standard/wmts/">WMTS</a>, WFS, WCS,
+            WPS), bulk data upload functionality,
+            <a target="_blank" href="https://jupyter.org/hub">
+              {" "}
+              Jupyter Hub
+            </a>{" "}
             integration, analytical workflow management/execution services, AI
             services etc.
           </p>
@@ -69,8 +100,11 @@ const About = ({ openModal }) => {
             Users with appropriate privileges can create, update or delete
             imagery Collections from their organisation’s STAC Catalog and then
             upload their organisation’s imagery into these Collections or add
-            publicly-available imagery from online services with STAC API’s e.g.
-            Microsoft Planetary Computer.
+            publicly-available imagery from online services with STAC API’s e.g.{" "}
+            <a target="_blank" href="https://planetarycomputer.microsoft.com/">
+              Microsoft Planetary Computer
+            </a>
+            .
           </p>
           <p>
             Once Collections are created, users can then search/discover, view
@@ -103,6 +137,9 @@ const About = ({ openModal }) => {
           <button className="about__button" onClick={openModal}>
             Try it out
           </button>
+          <Tooltip anchorSelect=".about__button" place="top" type="dark">
+            Start a conversation
+          </Tooltip>
         </section>
       </main>
 

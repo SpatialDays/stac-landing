@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "./Hero.scss";
-import FormModal from "../../../../components/FormModal/FormModal";
+import { Tooltip } from "react-tooltip";
 
 const Hero = ({ openModal }) => {
   const images = [
@@ -74,6 +74,9 @@ const Hero = ({ openModal }) => {
           <button className="hero__button" onClick={openModal}>
             Try it out
           </button>
+          <Tooltip anchorSelect=".hero__button" place="right" type="dark">
+            Start a conversation
+          </Tooltip>
         </div>
       </div>
 
