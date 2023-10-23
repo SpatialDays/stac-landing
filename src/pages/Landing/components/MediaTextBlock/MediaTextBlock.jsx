@@ -12,14 +12,14 @@ const MediaTextBlock = () => {
           />
         </div>
         <div className="media-text-block__text-container">
-          <h2 className="media-text-block__title">
-            STAC Portal Developers
-          </h2>
+          <h2 className="media-text-block__title">STAC Portal Developers</h2>
           <p className="media-text-block__description">
             We developed an intuitive and user-friendly STAC Portal and
             associated STAC API to help users manage their imagery data archive.
           </p>
-          <button className="media-text-block__button">Find out more</button>
+          <a href="/about">
+            <button className="media-text-block__button">Find out more</button>
+          </a>
         </div>
       </div>
     </div>

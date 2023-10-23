@@ -7,11 +7,11 @@ import FeatureIcons from "./components/FeatureIcons/FeatureIcons";
 import ImageBackgroundBlock from "./components/ImageBackgroundBlock/ImageBackgroundBlock";
 import UseCases from "./components/UseCases/UseCases";
 
-const Landing = () => {
+const Landing = ({ openModal }) => {
   return (
     <>
       <Header />
-      <Hero />
+      <Hero openModal={openModal} />
       <MediaTextBlock />
       <FeatureIcons />
       <ImageBackgroundBlock />

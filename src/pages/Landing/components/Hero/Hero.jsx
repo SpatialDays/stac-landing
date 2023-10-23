@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import Typed from "typed.js";
 import "./Hero.scss";
+import FormModal from "../../../../components/FormModal/FormModal";
 
-const Hero = () => {
+const Hero = ({ openModal }) => {
   const images = [
     "/hero/optimised/2.jpg",
     "/hero/optimised/3.jpg",
@@ -70,7 +71,9 @@ const Hero = () => {
             A STAC-based Portal to easily search, view and download imagery data
             for further analysis or processing
           </p>
-          <button className="hero__button">Try it out</button>
+          <button className="hero__button" onClick={openModal}>
+            Try it out
+          </button>
         </div>
       </div>
 

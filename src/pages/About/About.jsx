@@ -2,7 +2,7 @@ import "./About.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
-const About = () => {
+const About = ({ openModal }) => {
   return (
     <>
       <Header />
@@ -44,17 +44,27 @@ const About = () => {
         </section>
 
         <section>
-          <h2>STAC Integration</h2>
+          <h2>What We Created</h2>
           <p>
             We took advantage of the recently published STAC standard and its
             associated ecosystem of STAC tools to develop an intuitive and
-            user-friendly STAC Portal to help users manage their imagery data
-            archive.
+            user-friendly STAC Portal with associated STAC API, hosted in the
+            public cloud (Microsoft Azure).
+          </p>{" "}
+          <p>
+            This STAC-based SaaS service is designed to help users manage their
+            imagery data archive but is fully extensible, enabling other add-on
+            services to be seamlessly added over time e.g. derived data products
+            (High quality Water Masks, Annual Geomedian, NDVI, Fractional Cover
+            etc), catalogue services (OGC CSW), W*S services (OGC WMS, WMTS,
+            WFS, WCS, WPS), bulk data upload functionality, Jupyter Hub
+            integration, analytical workflow management/execution services, AI
+            services etc.
           </p>
         </section>
 
         <section>
-          <h2>User Privileges</h2>
+          <h2>How Does It Work?</h2>
           <p>
             Users with appropriate privileges can create, update or delete
             imagery Collections from their organisation’s STAC Catalog and then
@@ -62,10 +72,6 @@ const About = () => {
             publicly-available imagery from online services with STAC API’s e.g.
             Microsoft Planetary Computer.
           </p>
-        </section>
-
-        <section>
-          <h2>Data Exploration</h2>
           <p>
             Once Collections are created, users can then search/discover, view
             and download satellite data resources across these Collections using
@@ -73,10 +79,6 @@ const About = () => {
             needing programmatic access can use the comprehensive STAC API for
             data processing, machine learning, etc.
           </p>
-        </section>
-
-        <section>
-          <h2>Supported Imagery</h2>
           <p>
             Imagery data products supported currently include satellite data
             (Landsat, Sentinel-1, Sentinel-2, Maxar, Planet), derived data
@@ -85,6 +87,22 @@ const About = () => {
             imagery data products can also be easily supported using custom
             parsers.
           </p>
+        </section>
+
+        <section>
+          <h2>What Do We Offer?</h2>
+          <p>
+            The STAC Portal and API can be delivered as a fully managed (SaaS)
+            service, hosted in our Microsoft Azure environment, with Spatial
+            Days staff providing support and maintenance.
+          </p>
+          <p>
+            Alternatively, the STAC Portal and API can be hosted in the user’s
+            Microsoft Azure environment, with support from Spatial Days staff.
+          </p>
+          <button className="about__button" onClick={openModal}>
+            Try it out
+          </button>
         </section>
       </main>
 
