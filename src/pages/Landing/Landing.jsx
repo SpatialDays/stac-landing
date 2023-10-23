@@ -16,8 +16,9 @@ const Landing = ({ openModal }) => {
       <MediaTextBlock />
       <FeatureIcons />
       <ImageBackgroundBlock />
-      <UseCases />
       <Features />
+
+      <UseCases />
       <Footer />
     </>
   );

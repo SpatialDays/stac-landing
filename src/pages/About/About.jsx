@@ -2,6 +2,7 @@ import "./About.scss";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import { Tooltip } from "react-tooltip";
+import Features from "../Landing/components/Features/Features";
 
 const About = ({ openModal }) => {
   return (
@@ -82,9 +83,26 @@ const About = ({ openModal }) => {
               OGC CSW
             </a>
             ), W*S services (
-            <a href="https://www.ogc.org/standard/wms/">OGC WMS</a>,{" "}
-            <a href="https://www.ogc.org/standard/wmts/">WMTS</a>, WFS, WCS,
-            WPS), bulk data upload functionality,
+            <a href="https://www.ogc.org/standard/wms/" target="_blank">
+              OGC WMS
+            </a>
+            ,{" "}
+            <a href="https://www.ogc.org/standard/wmts/" target="_blank">
+              WMTS
+            </a>
+            ,{" "}
+            <a href="https://www.ogc.org/standard/wfs/" target="_blank">
+              WFS
+            </a>
+            ,{" "}
+            <a href="https://www.ogc.org/standard/wcs/" target="_blank">
+              WCS
+            </a>
+            ,{" "}
+            <a href="https://www.ogc.org/standard/wps/" target="_blank">
+              WPS
+            </a>
+            ), bulk data upload functionality,
             <a target="_blank" href="https://jupyter.org/hub">
               {" "}
               Jupyter Hub
@@ -142,6 +160,8 @@ const About = ({ openModal }) => {
           </Tooltip>
         </section>
       </main>
+
+      <Features />
 
       <Footer />
     </>
