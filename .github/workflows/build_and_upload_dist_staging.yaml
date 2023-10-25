@@ -1,5 +1,6 @@
 name: Build React website and upload to Azure Storage Blob
 on:
+  workflow_dispatch:
   push:
     branches:
       - staging
@@ -7,6 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: STAGING_ENVIRONMENT
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
