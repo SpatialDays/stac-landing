@@ -27,3 +27,4 @@ To run the STAC Portal landing page on your local machine:
     ```
 
 The landing page should now be accessible at `http://localhost:5173` or the respective port mentioned in your terminal.
+
