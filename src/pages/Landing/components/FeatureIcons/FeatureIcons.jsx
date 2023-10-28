@@ -6,25 +6,25 @@ const FeatureIcons = () => {
       icon: "/icons/globe.svg",
       title: "Portal",
       description:
-        "Explore our interactive portal. Our user-friendly interface allows you to easily browse and discover satellite imagery for your projects.",
+        "Explore your imagery archive using our interactive Portal,  Our user-friendly interface allows you to easily browse and search for imagery for your project.",
     },
     {
       icon: "/icons/database.svg",
       title: "Data",
       description:
-        "Access high-quality satellite data. Our vast database encompasses regions across the globe, ensuring accurate and comprehensive coverage for your projects.",
+        "Index your satellite imagery, aerial photography imagery or DTM/DSM imagery to create your own searchable Catalogue.",
     },
     {
       icon: "/icons/code.svg",
       title: "API",
       description:
-        "Easily integrate with our robust API. Designed for developers, our interface ensures seamless communication and data retrieval for your applications.",
+        "Use our fully-functional API for programmatic access to your imagery for all your applications.",
     },
     {
       icon: "/icons/tools.svg",
       title: "Tools",
       description:
-        "Utilize powerful analytical tools. From basic visualization to advanced predictive analysis, our toolkit empowers you to derive meaningful insights.",
+        "Use our data management tools, search tools, map tools, and download tools to manage, find, view and download your imagery.",
     },
   ];
 

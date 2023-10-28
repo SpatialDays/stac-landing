@@ -1,61 +1,59 @@
 import React from "react";
 import {
   FaMobileAlt,
-  FaEye,
-  FaBlog,
-  FaWrench,
-  FaCode,
-  FaChrome,
-  FaBookOpen,
-  FaArrowUp,
+  FaTools,
+  FaCheckCircle,
+  FaLock,
+  FaUserCircle,
+  FaUpload,
+  FaCloud,
+  FaSatelliteDish,
 } from "react-icons/fa";
 import "./Features.scss";
 
 const Features = () => {
   const featuresData = [
     {
-      title: "Full Responsive",
-      description: "Adjustable on smartphones and tablets",
+      title: "Fully Responsive",
+      description: "Usable on smartphones and tablets",
       icon: <FaMobileAlt />,
     },
     {
-      title: "Retina Ready",
-      description: "Retina display graphics",
-      icon: <FaEye />,
+      title: "Easy to Customise",
+      description: "Modular approach makes customisation easy",
+      icon: <FaTools />,
     },
     {
-      title: "Blog Layout",
-      description: "Blog style layout",
-      icon: <FaBlog />,
+      title: "Comprehensive",
+      description: "Has all required tools for data management",
+      icon: <FaCheckCircle />,
     },
     {
-      title: "Easy to Customize",
-      description: "Easy customizability",
-      icon: <FaWrench />,
+      title: "Secure",
+      description: "SSL-enabled with Single-Sign-On (Active Directory)",
+      icon: <FaLock />,
     },
     {
-      title: "Clean Code",
-      description: "Clean code",
-      icon: <FaCode />,
+      title: "Role-Based Access Control",
+      description: 'Supports “Viewer”, “Creator” and “Admin” User Roles',
+      icon: <FaUserCircle />,
     },
     {
-      title: "Browser Compatibility",
-      description: "Browser compatibility",
-      icon: <FaChrome />,
+      title: "Bulk Upload",
+      description: "Support for bulk upload of even large imagery archives",
+      icon: <FaUpload />,
     },
     {
-      title: "Well Documented",
-      description: "Well documented",
-      icon: <FaBookOpen />,
+      title: "Cloud-Hosted",
+      description: "Resilient and easily scalable and extensible",
+      icon: <FaCloud />,
     },
     {
-      title: "Free Updates",
-      description: "Free updates",
-      icon: <FaArrowUp />,
+      title: "Data Types",
+      description: "Satellite imagery, aerial photography, DTM/DSM, Point Cloud data all supported through bespoke parsers",
+      icon: <FaSatelliteDish />,
     },
-    
   ];
-
   return (
     <div className="features-container">
       <h2>Key Features</h2>

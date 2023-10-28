@@ -161,8 +161,6 @@ const About = ({ openModal }) => {
         </section>
       </main>
 
-      <Features />
-
       <Footer />
     </>
   );

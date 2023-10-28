@@ -25,8 +25,7 @@ const UseCases = () => {
   return (
     <div className="use-cases">
       <h2 className="use-cases__description">
-        Explore real-world applications of geospatial data in scientific
-        research.
+      Enable real-world applications of geospatial and earth observation data.
       </h2>
       <div className="use-cases__grid">
         {cases.map((useCase, index) => (
