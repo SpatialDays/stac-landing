@@ -64,23 +64,31 @@
       }
     }
 
-    &__mobile-login {
-      background-color: rgb(41, 80, 212);
-      color: white;
-      padding: 0.5rem 5rem;
-      border-radius: 5px;
-      font-weight: 500;
-      transition: all 0.3s ease-in-out;
-      margin-top: 2rem;
-
-      &:hover {
-        background-color: rgb(41, 80, 212, 0.8);
-        transform: scale(1.05);
+    &__mobile {
+      &-login {
+        background-color: rgb(41, 80, 212);
         color: white;
+        padding: 0.5rem 5rem;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+        margin-top: 2rem;
+
+        &:hover {
+          background-color: rgb(41, 80, 212, 0.8);
+          transform: scale(1.05);
+          color: white;
+        }
+
+        @media (min-width: 600px) {
+          display: none;
+        }
       }
 
-      @media (min-width: 600px) {
-        display: none;
+      &-menu {
+        @media (min-width: 600px) {
+          display: none;
+        }
       }
     }
 

@@ -38,11 +38,14 @@ const Header = () => {
         </div>
 
         {/* Button for login */}
-        <div>
+        <div
+          className="header__mobile-menu"
+        >
           <a
             href="https://portal.staging.stac.spatialdays.com/explorer"
-            className="header__link header__mobile-login"
             target="_blank"
+            className="header__link header__mobile-login"
+
           >
             Login
           </a>
