@@ -17,12 +17,33 @@ const Header = () => {
           <a href="/about" className="header__link">
             Details
           </a>
-          <a href="https://spatialdays.com/" target="_blank" className="header__link">
+          <a
+            href="https://spatialdays.com/"
+            target="_blank"
+            className="header__link"
+          >
             Who We Are
           </a>
 
           {/* Button for login */}
-          <a href="https://portal.staging.stac.spatialdays.com/explorer" className="header__link header__link--btn" target="_blank">
+          <div>
+            <a
+              href="https://portal.staging.stac.spatialdays.com/explorer"
+              className="header__link header__link--btn"
+              target="_blank"
+            >
+              Login
+            </a>
+          </div>
+        </div>
+
+        {/* Button for login */}
+        <div>
+          <a
+            href="https://portal.staging.stac.spatialdays.com/explorer"
+            className="header__link header__mobile-login"
+            target="_blank"
+          >
             Login
           </a>
         </div>

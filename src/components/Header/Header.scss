@@ -13,6 +13,10 @@
     height: 100px;
     padding: 0 2rem;
 
+    @media (max-width: 600px) {
+      height: 150px;
+    }
+
     @media (max-width: 1200px) {
       margin: 0 6%;
     }
@@ -27,7 +31,6 @@
     &__links {
       display: flex;
       align-items: center;
-      
     }
 
     &__link {
@@ -37,26 +40,51 @@
       margin: 0 1.5rem;
       transition: all 0.3s ease-in-out;
       font-weight: 300;
+      min-width: 50px;
       &:hover {
         color: var(--color-link-hover-light);
       }
 
       &--btn {
-        background-color: rgb(41,80,212);
+        background-color: rgb(41, 80, 212);
         color: white;
         padding: 0.5rem 1rem;
         border-radius: 5px;
         font-weight: 500;
         transition: all 0.3s ease-in-out;
         &:hover {
-          background-color: rgb(41,80,212, 0.8);
+          background-color: rgb(41, 80, 212, 0.8);
           transform: scale(1.05);
           color: white;
+        }
+
+        @media (max-width: 600px) {
+          display: none;
         }
       }
     }
 
-    @media (max-width: 768px) {
+    &__mobile-login {
+      background-color: rgb(41, 80, 212);
+      color: white;
+      padding: 0.5rem 5rem;
+      border-radius: 5px;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+      margin-top: 2rem;
+
+      &:hover {
+        background-color: rgb(41, 80, 212, 0.8);
+        transform: scale(1.05);
+        color: white;
+      }
+
+      @media (min-width: 600px) {
+        display: none;
+      }
+    }
+
+    @media (max-width: 900px) {
       flex-direction: column;
       padding-bottom: 1.5rem;
       &__logo {
