@@ -20,6 +20,11 @@ const Header = () => {
           <a href="https://spatialdays.com/" target="_blank" className="header__link">
             Who We Are
           </a>
+
+          {/* Button for login */}
+          <a href="https://portal.staging.stac.spatialdays.com/explorer" className="header__link header__link--btn" target="_blank">
+            Login
+          </a>
         </div>
       </div>
     </div>
