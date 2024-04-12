@@ -1,0 +1,39 @@
+name: Build docker images on release
+
+on:
+  release:
+    types: [created]
+
+permissions:
+  contents: write
+
+jobs:
+  build-distribution-version-into-artifact:
+    runs-on: ubuntu-latest
+    environment:
+      name: PROD_ENVIRONMENT
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout repository
+      - uses: actions/setup-node@v4
+        name: Setup Node.js
+        with:
+          node-version: "16.16.0"
+      - run: npm install
+        name: Install dependencies
+      - run: npm ci
+        name: Install ci dependencies
+      - run: |
+          npm run build --silent || true
+        name: Build distribution version
+      - uses: actions/upload-artifact@v4
+        name: Upload artifact
+        with:
+          name: ${{ github.event.repository.name }}-${{ github.event.release.tag_name }}-prod
+          path: dist
+      - name: Zip dist folder
+        run: zip -r ${{ github.event.repository.name }}-${{ github.event.release.tag_name }}-prod.zip dist
+      - name: Upload file to existing release using gh cli
+        run: gh release upload ${{ github.event.release.tag_name }} ${{ github.event.repository.name }}-${{ github.event.release.tag_name }}-prod.zip
